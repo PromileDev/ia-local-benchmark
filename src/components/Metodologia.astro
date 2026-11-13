@@ -1,0 +1,68 @@
+---
+import type { Prueba } from '../lib/metricas';
+
+interface Props {
+  pruebas: Prueba[];
+}
+const { pruebas } = Astro.props;
+const claseNivel = (n: string) =>
+  n === 'Básico' ? 'nivel nivel-basico' : n === 'Difícil' ? 'nivel nivel-dificil' : 'nivel nivel-muy';
+const porNivel = (n: string) => pruebas.filter((p) => p.nivel === n).reduce((a, p) => a + p.puntos, 0);
+---
+
+<section class="tarjeta" id="metodologia">
+  <div class="tarjeta-cab">
+    <div>
+      <h2>Metodología</h2>
+      <p class="sub">
+        10 pruebas, 100 puntos. Las básicas valen poco ({porNivel('Básico')} puntos en total) y las difíciles y muy
+        difíciles se reparten los otros {porNivel('Difícil') + porNivel('Muy difícil')}, para que haya una diferencia
+        clara entre un modelo bueno y uno flojo.
+      </p>
+    </div>
+  </div>
+
+  <div class="metodo-grid">
+    {
+      pruebas.map((p) => (
+        <article class="prueba-card">
+          <h3>
+            <span>
+              {p.id}. {p.nombre}
+            </span>
+            <span class={claseNivel(p.nivel)}>{p.nivel}</span>
+          </h3>
+          <p class="meta">
+            {p.categoria} · {p.puntos} puntos
+          </p>
+          <p>{p.correccion}</p>
+          <details>
+            <summary>Ver prompt</summary>
+            <p>{p.prompt}</p>
+          </details>
+        </article>
+      ))
+    }
+  </div>
+
+  <h3 style="font-size:15px;margin:22px 0 4px">Cómo se puntúa</h3>
+  <p class="sub">
+    La corrección es estricta: casi todas las pruebas son de todo o nada y solo se corrige la respuesta final, no el
+    razonamiento. Las pruebas de programación, instrucciones y extracción se corrigen con un script, para que la
+    nota no dependa de mi criterio.
+  </p>
+  <div class="escala">
+    <div><b>90–100</b>Excelente</div>
+    <div><b>70–89</b>Bueno: fiable para casi todo</div>
+    <div><b>45–69</b>Aceptable: útil con supervisión</div>
+    <div><b>0–44</b>Flojo: solo tareas sencillas</div>
+  </div>
+
+  <h3 style="font-size:15px;margin:22px 0 4px">Cómo se mide la velocidad</h3>
+  <p class="sub">
+    Los datos salen de la interfaz web de llama.cpp. <b>Velocidad de salida</b>: mediana de los tokens por segundo
+    al generar la respuesta en todas las pruebas. <b>Velocidad de entrada</b>: tokens por segundo al leer el
+    mensaje en la prueba 8, la única con una entrada larga; mientras no esté hecha, se muestra la mediana de las
+    entradas cortas, que es menos fiable. La velocidad no cuenta para el índice: se muestra aparte.
+  </p>
+</section>

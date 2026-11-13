@@ -1,0 +1,141 @@
+REGISTRO DE MOVIMIENTOS · FERRETERÍA INDUSTRIAL VALLÈS · NOVIEMBRE 2026
+Formato: fecha hora | tipo | almacén | producto | unidades | referencia | operario
+
+01/11/2026 07:29 | ENTRADA | Almacén B | taco de 6 mm | 40 uds | albarán PR-2216 | Jordi
+01/11/2026 11:50 | SALIDA | Almacén B | tuerca M6 | 200 uds | pedido 4602 | Pau
+01/11/2026 15:07 | SALIDA | Almacén A | brida 200 mm | 10 uds | pedido 4556 | Jordi
+01/11/2026 17:47 | SALIDA | Almacén A | taco de 6 mm | 60 uds | pedido 4555 | Núria
+01/11/2026 19:03 | ENTRADA | Almacén B | brida 200 mm | 50 uds | albarán PR-2324 | Núria
+01/11/2026 19:10 | SALIDA | Almacén A | arandela M6 | 150 uds | pedido 4436 | Pau
+02/11/2026 08:41 | SALIDA | Almacén A | taco de 8 mm | 60 uds | pedido 4471 | Sergi
+02/11/2026 09:52 | ENTRADA | Almacén B | brida 200 mm | 15 uds | albarán PR-2355 | Jordi
+02/11/2026 12:09 | ENTRADA | Almacén A | taco de 10 mm | 20 uds | albarán PR-2331 | Jordi
+02/11/2026 13:20 | SALIDA | Almacén A | tornillo M6 | 120 uds | pedido 4447 | Jordi
+02/11/2026 13:22 | SALIDA | Almacén A | brida 200 mm | 60 uds | pedido 4677 | Jordi
+02/11/2026 16:35 | ENTRADA | Almacén B | taco de 6 mm | 10 uds | albarán PR-2365 | Sergi
+02/11/2026 18:10 | SALIDA | Almacén A | arandela M6 | 30 uds | pedido 4483 | Sergi
+02/11/2026 18:39 | ENTRADA | Almacén B | tornillo M6 | 50 uds | albarán PR-2388 | Laia
+03/11/2026 07:41 | DEVOLUCIÓN | Almacén A | tornillo M6 | 30 uds | devolución pedido 4679 | Pau
+03/11/2026 08:26 | DEVOLUCIÓN | Almacén B | tuerca M6 | 100 uds | devolución pedido 4519 | Jordi
+03/11/2026 09:48 | ENTRADA | Almacén B | tornillo M6 | 100 uds | albarán PR-2335 | Sergi
+03/11/2026 11:05 | ENTRADA | Almacén A | taco de 8 mm | 200 uds | albarán PR-2290 | Núria
+03/11/2026 13:22 | SALIDA | Almacén A | tuerca M6 | 100 uds | pedido 4656 | Pau
+03/11/2026 19:02 | SALIDA | Almacén A | tornillo M6 | 40 uds | pedido 4504 | Pau
+04/11/2026 10:01 | SALIDA | Almacén B | taco de 10 mm | 15 uds | pedido 4536 | Laia
+04/11/2026 16:08 | ENTRADA | Almacén A | taco de 6 mm | 40 uds | albarán PR-2240 | Marta
+04/11/2026 16:26 | ENTRADA | Almacén B | tuerca M6 | 80 uds | albarán PR-2240 | Pau
+04/11/2026 16:30 | SALIDA | Almacén B | taco de 8 mm | 120 uds | pedido 4502 | Laia
+04/11/2026 16:41 | SALIDA | Almacén A | tuerca M6 | 80 uds | pedido 4601 | Marta
+04/11/2026 19:23 | SALIDA | Almacén A | taco de 6 mm | 30 uds | pedido 4655 | Marta
+05/11/2026 07:05 | ENTRADA | Almacén A | tuerca M6 | 80 uds | albarán PR-2370 | Jordi
+05/11/2026 07:31 | SALIDA | Almacén A | taco de 10 mm | 100 uds | pedido 4484 | Jordi
+05/11/2026 08:10 | SALIDA | Almacén A | taco de 10 mm | 30 uds | pedido 4419 | Núria
+05/11/2026 09:12 | SALIDA | Almacén A | taco de 8 mm | 35 uds | pedido 4519 | Pau
+05/11/2026 09:16 | SALIDA | Almacén B | brida 200 mm | 150 uds | pedido 4495 | Jordi
+05/11/2026 15:56 | SALIDA | Almacén A | taco de 10 mm | 15 uds | pedido 4477 | Jordi
+06/11/2026 09:25 | SALIDA | Almacén A | taco de 10 mm | 15 uds | pedido 4424 | Núria
+06/11/2026 10:17 | SALIDA | Almacén A | tuerca M6 | 100 uds | pedido 4484 | Sergi
+06/11/2026 11:08 | SALIDA | Almacén A | taco de 6 mm | 200 uds | pedido 4689 | Laia
+06/11/2026 13:37 | SALIDA | Almacén A | taco de 10 mm | 20 uds | pedido 4609 | Jordi
+06/11/2026 13:47 | DEVOLUCIÓN | Almacén A | taco de 8 mm | 15 uds | devolución pedido 4519 | Marta
+06/11/2026 15:13 | DEVOLUCIÓN | Almacén A | tuerca M6 | 80 uds | devolución pedido 4467 | Laia
+06/11/2026 15:23 | ENTRADA | Almacén A | taco de 6 mm | 40 uds | albarán PR-2244 | Jordi
+06/11/2026 15:31 | SALIDA | Almacén A | arandela M6 | 20 uds | pedido 4453 | Marta
+07/11/2026 07:27 | SALIDA | Almacén A | arandela M6 | 200 uds | pedido 4410 | Pau
+07/11/2026 08:01 | SALIDA | Almacén A | taco de 10 mm | 100 uds | pedido 4498 | Núria
+07/11/2026 09:51 | ENTRADA | Almacén B | tuerca M6 | 40 uds | albarán PR-2397 | Núria
+07/11/2026 11:40 | SALIDA | Almacén A | taco de 10 mm | 15 uds | pedido 4524 | Núria
+07/11/2026 12:01 | SALIDA | Almacén A | tuerca M6 | 40 uds | pedido 4442 | Marta
+07/11/2026 17:21 | SALIDA | Almacén A | brida 200 mm | 200 uds | pedido 4494 | Laia
+07/11/2026 18:34 | SALIDA | Almacén A | taco de 10 mm | 120 uds | pedido 4553 | Jordi
+07/11/2026 18:53 | ENTRADA | Almacén B | arandela M6 | 150 uds | albarán PR-2246 | Laia
+08/11/2026 07:36 | ENTRADA | Almacén A | brida 200 mm | 10 uds | albarán PR-2331 | Jordi
+08/11/2026 10:02 | SALIDA | Almacén A | taco de 8 mm | 140 uds | pedido 4560 | Laia
+08/11/2026 10:32 | ENTRADA | Almacén A | taco de 10 mm | 40 uds | albarán PR-2287 | Jordi
+08/11/2026 10:48 | SALIDA | Almacén A | tornillo M6 | 60 uds | pedido 4417 | Marta
+08/11/2026 12:26 | ENTRADA | Almacén A | tuerca M6 | 80 uds | albarán PR-2310 | Pau
+08/11/2026 15:51 | ENTRADA | Almacén A | taco de 10 mm | 80 uds | albarán PR-2368 | Jordi
+08/11/2026 18:44 | ENTRADA | Almacén B | taco de 6 mm | 150 uds | albarán PR-2276 | Sergi
+09/11/2026 07:05 | SALIDA | Almacén A | tornillo M6 | 150 uds | pedido 4579 | Marta
+09/11/2026 11:50 | ENTRADA | Almacén B | taco de 6 mm | 40 uds | albarán PR-2338 | Laia
+09/11/2026 14:40 | ENTRADA | Almacén A | arandela M6 | 100 uds | albarán PR-2271 | Núria
+09/11/2026 14:48 | SALIDA | Almacén A | brida 200 mm | 30 uds | pedido 4401 | Laia
+09/11/2026 15:40 | SALIDA | Almacén B | arandela M6 | 20 uds | pedido 4575 | Laia
+09/11/2026 16:04 | SALIDA | Almacén A | arandela M6 | 40 uds | pedido 4593 | Pau
+09/11/2026 17:20 | SALIDA | Almacén A | taco de 8 mm | 25 uds | pedido 4588 | Marta
+09/11/2026 17:33 | SALIDA | Almacén A | taco de 6 mm | 100 uds | pedido 4544 | Núria
+10/11/2026 09:27 | ENTRADA | Almacén A | tornillo M6 | 150 uds | albarán PR-2376 | Jordi
+10/11/2026 15:09 | SALIDA | Almacén A | tuerca M6 | 25 uds | pedido 4534 | Pau
+NOTA 10/11/2026 12:40: el pedido 4471 del día 2 se registró mal. La salida real de taco de 8 mm fue de 40 uds, no de 60. No se modifica la línea original; aplicar esta corrección al calcular el stock.
+10/11/2026 17:30 | ENTRADA | Almacén A | taco de 6 mm | 30 uds | albarán PR-2348 | Pau
+10/11/2026 18:06 | ENTRADA | Almacén A | tornillo M6 | 25 uds | albarán PR-2301 | Núria
+10/11/2026 18:12 | SALIDA | Almacén A | tuerca M6 | 10 uds | pedido 4403 | Pau
+10/11/2026 19:41 | SALIDA | Almacén B | brida 200 mm | 150 uds | pedido 4690 | Laia
+11/11/2026 08:15 | ENTRADA | Almacén A | taco de 8 mm | 100 uds | albarán PR-2341 | Marta
+11/11/2026 10:37 | SALIDA | Almacén A | brida 200 mm | 30 uds | pedido 4553 | Sergi
+11/11/2026 12:03 | ENTRADA | Almacén B | tornillo M6 | 15 uds | albarán PR-2379 | Jordi
+11/11/2026 15:42 | SALIDA | Almacén A | tornillo M6 | 20 uds | pedido 4676 | Sergi
+11/11/2026 16:24 | ENTRADA | Almacén A | taco de 6 mm | 150 uds | albarán PR-2297 | Laia
+11/11/2026 17:32 | DEVOLUCIÓN | Almacén B | taco de 6 mm | 10 uds | devolución pedido 4633 | Laia
+11/11/2026 19:06 | ENTRADA | Almacén A | tornillo M6 | 10 uds | albarán PR-2322 | Núria
+11/11/2026 19:36 | SALIDA | Almacén A | tuerca M6 | 10 uds | pedido 4439 | Núria
+12/11/2026 10:02 | SALIDA | Almacén A | tornillo M6 | 40 uds | pedido 4567 | Pau
+12/11/2026 12:33 | SALIDA | Almacén A | taco de 8 mm | 80 uds | pedido 4610 | Pau
+12/11/2026 12:38 | SALIDA | Almacén B | brida 200 mm | 150 uds | pedido 4565 | Sergi
+12/11/2026 13:03 | SALIDA | Almacén A | arandela M6 | 50 uds | pedido 4646 | Núria
+12/11/2026 13:11 | SALIDA | Almacén B | taco de 6 mm | 100 uds | pedido 4569 | Marta
+12/11/2026 15:08 | SALIDA | Almacén A | arandela M6 | 30 uds | pedido 4408 | Jordi
+12/11/2026 17:30 | SALIDA | Almacén A | taco de 10 mm | 30 uds | pedido 4665 | Laia
+13/11/2026 09:51 | DEVOLUCIÓN | Almacén A | arandela M6 | 20 uds | devolución pedido 4634 | Núria
+13/11/2026 11:38 | ENTRADA | Almacén A | tuerca M6 | 20 uds | albarán PR-2285 | Laia
+13/11/2026 16:15 | SALIDA | Almacén A | taco de 6 mm | 120 uds | pedido 4672 | Laia
+13/11/2026 16:21 | SALIDA | Almacén B | arandela M6 | 120 uds | pedido 4529 | Jordi
+13/11/2026 17:24 | SALIDA | Almacén A | brida 200 mm | 200 uds | pedido 4422 | Jordi
+13/11/2026 18:18 | SALIDA | Almacén A | taco de 6 mm | 60 uds | pedido 4690 | Laia
+14/11/2026 10:11 | ENTRADA | Almacén A | tornillo M6 | 50 uds | albarán PR-2335 | Laia
+14/11/2026 12:32 | SALIDA | Almacén A | arandela M6 | 200 uds | pedido 4485 | Pau
+14/11/2026 12:51 | SALIDA | Almacén A | tornillo M6 | 15 uds | pedido 4499 | Pau
+14/11/2026 14:49 | SALIDA | Almacén A | taco de 10 mm | 40 uds | pedido 4598 | Jordi
+14/11/2026 15:39 | ENTRADA | Almacén A | arandela M6 | 80 uds | albarán PR-2398 | Núria
+14/11/2026 15:55 | DEVOLUCIÓN | Almacén A | taco de 6 mm | 80 uds | devolución pedido 4404 | Pau
+14/11/2026 18:55 | SALIDA | Almacén A | taco de 8 mm | 45 uds | pedido 4655 | Marta
+15/11/2026 07:08 | SALIDA | Almacén A | taco de 6 mm | 40 uds | pedido 4522 | Marta
+15/11/2026 07:58 | SALIDA | Almacén A | taco de 8 mm | 90 uds | pedido 4671 | Sergi
+15/11/2026 09:06 | SALIDA | Almacén A | brida 200 mm | 120 uds | pedido 4459 | Núria
+15/11/2026 13:52 | SALIDA | Almacén B | tuerca M6 | 80 uds | pedido 4663 | Laia
+15/11/2026 14:54 | SALIDA | Almacén A | taco de 10 mm | 200 uds | pedido 4630 | Sergi
+15/11/2026 16:38 | SALIDA | Almacén A | arandela M6 | 120 uds | pedido 4546 | Sergi
+15/11/2026 17:06 | SALIDA | Almacén A | taco de 6 mm | 10 uds | pedido 4614 | Pau
+15/11/2026 17:52 | SALIDA | Almacén B | brida 200 mm | 25 uds | pedido 4485 | Marta
+16/11/2026 10:17 | ENTRADA | Almacén B | tuerca M6 | 150 uds | albarán PR-2372 | Laia
+16/11/2026 11:03 | SALIDA | Almacén A | tuerca M6 | 150 uds | pedido 4542 | Núria
+16/11/2026 12:23 | SALIDA | Almacén A | arandela M6 | 20 uds | pedido 4677 | Laia
+16/11/2026 14:21 | SALIDA | Almacén B | brida 200 mm | 15 uds | pedido 4506 | Laia
+16/11/2026 14:40 | SALIDA | Almacén B | tuerca M6 | 80 uds | pedido 4644 | Pau
+17/11/2026 07:00 | ENTRADA | Almacén B | brida 200 mm | 20 uds | albarán PR-2322 | Sergi
+17/11/2026 07:38 | SALIDA | Almacén B | taco de 6 mm | 50 uds | pedido 4693 | Pau
+17/11/2026 07:44 | SALIDA | Almacén A | tuerca M6 | 10 uds | pedido 4569 | Laia
+17/11/2026 13:17 | SALIDA | Almacén B | tuerca M6 | 60 uds | pedido 4400 | Laia
+17/11/2026 19:15 | ENTRADA | Almacén A | taco de 6 mm | 200 uds | albarán PR-2342 | Núria
+18/11/2026 07:00 | SALIDA | Almacén A | arandela M6 | 120 uds | pedido 4656 | Laia
+18/11/2026 07:01 | SALIDA | Almacén A | arandela M6 | 100 uds | pedido 4404 | Sergi
+18/11/2026 07:06 | SALIDA | Almacén B | tornillo M6 | 60 uds | pedido 4648 | Jordi
+18/11/2026 09:33 | SALIDA | Almacén A | taco de 10 mm | 30 uds | pedido 4445 | Marta
+18/11/2026 13:49 | ENTRADA | Almacén A | tuerca M6 | 150 uds | albarán PR-2379 | Laia
+18/11/2026 14:53 | SALIDA | Almacén B | taco de 10 mm | 10 uds | pedido 4480 | Núria
+18/11/2026 17:44 | ENTRADA | Almacén B | tuerca M6 | 50 uds | albarán PR-2286 | Pau
+19/11/2026 07:13 | SALIDA | Almacén A | tornillo M6 | 30 uds | pedido 4610 | Marta
+19/11/2026 08:23 | ENTRADA | Almacén A | taco de 10 mm | 200 uds | albarán PR-2397 | Núria
+19/11/2026 11:27 | ENTRADA | Almacén B | taco de 10 mm | 120 uds | albarán PR-2229 | Sergi
+19/11/2026 13:47 | ENTRADA | Almacén A | taco de 10 mm | 10 uds | albarán PR-2377 | Sergi
+19/11/2026 13:48 | ENTRADA | Almacén A | tornillo M6 | 120 uds | albarán PR-2261 | Núria
+19/11/2026 14:52 | ENTRADA | Almacén A | tuerca M6 | 150 uds | albarán PR-2324 | Laia
+19/11/2026 15:24 | SALIDA | Almacén A | brida 200 mm | 50 uds | pedido 4628 | Laia
+19/11/2026 19:05 | SALIDA | Almacén A | brida 200 mm | 25 uds | pedido 4625 | Sergi
+20/11/2026 10:31 | DEVOLUCIÓN | Almacén A | tuerca M6 | 50 uds | devolución pedido 4622 | Marta
+20/11/2026 10:35 | SALIDA | Almacén B | tornillo M6 | 15 uds | pedido 4662 | Jordi
+20/11/2026 10:44 | SALIDA | Almacén A | tornillo M6 | 25 uds | pedido 4499 | Sergi
+20/11/2026 14:42 | SALIDA | Almacén A | taco de 10 mm | 30 uds | pedido 4439 | Marta
+20/11/2026 17:08 | SALIDA | Almacén A | taco de 6 mm | 10 uds | pedido 4470 | Laia
+20/11/2026 18:16 | ENTRADA | Almacén A | tuerca M6 | 80 uds | albarán PR-2328 | Jordi
+20/11/2026 19:12 | ENTRADA | Almacén A | taco de 6 mm | 120 uds | albarán PR-2396 | Núria

@@ -1,0 +1,97 @@
+{
+  "nombre": "Índice IA Local",
+  "version": "1.0",
+  "puntosTotales": 100,
+  "pruebas": [
+    {
+      "id": "1",
+      "nombre": "Respuesta corta",
+      "categoria": "Conocimiento",
+      "nivel": "Básico",
+      "puntos": 5,
+      "prompt": "¿Cuál es la capital de Australia? Responde solo con el nombre.",
+      "correccion": "Todo o nada: la respuesta debe ser exactamente «Canberra», sin más texto."
+    },
+    {
+      "id": "2",
+      "nombre": "Razonamiento",
+      "categoria": "Matemáticas",
+      "nivel": "Básico",
+      "puntos": 5,
+      "prompt": "Tengo 3 cajas con 12 manzanas cada una. Regalo 7 manzanas y después compro el doble de las que he regalado. ¿Cuántas manzanas tengo ahora? Explica el cálculo.",
+      "correccion": "Todo o nada: resultado 43 con los pasos intermedios correctos."
+    },
+    {
+      "id": "3",
+      "nombre": "Programación básica",
+      "categoria": "Programación",
+      "nivel": "Básico",
+      "puntos": 5,
+      "prompt": "Escribe una función en Python que compruebe si una frase es un palíndromo, ignorando espacios, mayúsculas y tildes. Añade 3 ejemplos de uso.",
+      "correccion": "Todo o nada: debe pasar 10 casos de prueba automáticos."
+    },
+    {
+      "id": "4",
+      "nombre": "Fechas con trampa",
+      "categoria": "Razonamiento",
+      "nivel": "Difícil",
+      "puntos": 11,
+      "prompt": "Hoy es viernes 13 de noviembre de 2026. ¿Qué día de la semana será el próximo 29 de febrero? Indica el día de la semana y la fecha completa.",
+      "correccion": "Todo o nada: día de la semana y año correctos (2027 no es bisiesto)."
+    },
+    {
+      "id": "5",
+      "nombre": "Lógica",
+      "categoria": "Razonamiento",
+      "nivel": "Difícil",
+      "puntos": 11,
+      "prompt": "Acertijo de caballeros (siempre dicen la verdad) y bribones (siempre mienten) con cuatro personajes y una frase condicional. Ver PROMPTS.md.",
+      "correccion": "Todo o nada: el tipo de los cuatro personajes debe ser correcto."
+    },
+    {
+      "id": "6",
+      "nombre": "Programación con casos ocultos",
+      "categoria": "Programación",
+      "nivel": "Muy difícil",
+      "puntos": 15,
+      "prompt": "Función compactar_rangos(numeros): lista desordenada con repetidos y negativos → tramos consecutivos compactados (\"1-3,5,7-10\"). Ver PROMPTS.md.",
+      "correccion": "Debe pasar 12 casos ocultos. 7 puntos si falla exactamente uno; 0 si falla más."
+    },
+    {
+      "id": "7",
+      "nombre": "Instrucciones múltiples",
+      "categoria": "Seguir instrucciones",
+      "nivel": "Difícil",
+      "puntos": 11,
+      "prompt": "Texto sobre reciclaje con 7 reglas a la vez: 3 frases, empezar por R, 45–60 palabras, «contenedor» 2 veces, sin comas, acabar en «!» y sin la palabra «vidrio».",
+      "correccion": "Las 7 reglas se comprueban con un script. 5 puntos si cumple 6 de 7; 0 si cumple menos."
+    },
+    {
+      "id": "8",
+      "nombre": "Contexto largo",
+      "categoria": "Contexto largo",
+      "nivel": "Muy difícil",
+      "puntos": 15,
+      "prompt": "Registro de 141 movimientos de almacén. Calcular el stock de un producto al cierre de un día, con una nota de corrección, otro almacén y productos parecidos como trampas.",
+      "correccion": "Todo o nada: el número final debe ser exacto."
+    },
+    {
+      "id": "9",
+      "nombre": "Extracción de datos",
+      "categoria": "Extracción",
+      "nivel": "Difícil",
+      "puntos": 11,
+      "prompt": "Extraer a JSON las facturas válidas de un correo con fechas en formatos distintos, una factura anulada y un importe corregido.",
+      "correccion": "Todo o nada: JSON válido, sin texto extra, con las facturas y valores correctos."
+    },
+    {
+      "id": "10",
+      "nombre": "Alucinaciones",
+      "categoria": "Fiabilidad",
+      "nivel": "Difícil",
+      "puntos": 11,
+      "prompt": "Resume en 3 frases el argumento de la novela «El reloj de arena de Tordesillas», de Carmen Laforet.",
+      "correccion": "Todo o nada: debe decir que no conoce esa novela o que no existe, sin inventarse el argumento."
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+---
+import Base from '../layouts/Base.astro';
+import Metodologia from '../components/Metodologia.astro';
+import benchmark from '../data/benchmark.json';
+import datos from '../data/modelos.json';
+import { resumir, fmt, slotFamilia, type Modelo, type Prueba } from '../lib/metricas';
+
+const pruebas = benchmark.pruebas as Prueba[];
+const modelos = datos.modelos as Modelo[];
+const resumenes = modelos.map((m) => resumir(m, pruebas));
+
+const mejor = <T,>(arr: T[], f: (x: T) => number | null) =>
+  arr.filter((x) => f(x) !== null).sort((a, b) => (f(b) as number) - (f(a) as number))[0];
+const topIndice = mejor(resumenes, (r) => r.indice);
+const topSalida = mejor(resumenes, (r) => r.velSalida);
+const topEntrada = mejor(resumenes, (r) => r.velEntrada);
+const totalCompletadas = resumenes.reduce((a, r) => a + r.completadas, 0);
+const cuantizaciones = [...new Set(modelos.map((m) => m.cuantizacion))].sort();
+---
+
+<Base
+  titulo="Índice IA Local · Comparativa de modelos en local"
+  descripcion="Comparativa de modelos de IA ejecutados en local: puntuación en un benchmark estricto y velocidad real."
+>
+  <header class="cabecera">
+    <div class="wrap">
+      <div class="fila">
+        <div class="marca"><span class="marca-icono">IA</span> Índice IA Local</div>
+        <button class="boton-tema" id="boton-tema" type="button">Cambiar tema</button>
+      </div>
+      <h1>Comparativa de modelos de IA en local</h1>
+      <p class="intro">
+        Cada modelo se ejecuta en local y pasa el mismo benchmark de 10 pruebas. Se compara la
+        puntuación (sobre 100) y la velocidad real en tokens por segundo.
+      </p>
+    </div>
+  </header>
+
+  <nav class="nav-secciones" aria-label="Secciones">
+    <div class="wrap">
+      <a href="#resumen">Resumen</a>
+      <a href="#ranking">Ranking</a>
+      <a href="#dispersion">Puntuación vs velocidad</a>
+      <a href="#desglose">Desglose por prueba</a>
+      <a href="#tabla">Tabla</a>
+      <a href="#metodologia">Metodología</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="resumen" class="destacados" aria-label="Resumen">
+      <div class="destacado">
+        <p class="etiqueta">Mejor puntuación</p>
+        <p class="valor">
+          {topIndice ? topIndice.indice : '—'}<small> / 100{topIndice?.provisional ? ' · provisional' : ''}</small>
+        </p>
+        {topIndice && (
+          <p class="quien">
+            <span class="punto" style={`background:var(--s${slotFamilia(topIndice.modelo.familia)})`} />
+            {topIndice.modelo.nombre}
+          </p>
+        )}
+      </div>
+      <div class="destacado">
+        <p class="etiqueta">Más rápido escribiendo</p>
+        <p class="valor">{topSalida ? fmt.dec(topSalida.velSalida as number) : '—'}<small> tokens/s</small></p>
+        {topSalida && (
+          <p class="quien">
+            <span class="punto" style={`background:var(--s${slotFamilia(topSalida.modelo.familia)})`} />
+            {topSalida.modelo.nombre}
+          </p>
+        )}
+      </div>
+      <div class="destacado">
+        <p class="etiqueta">Más rápido leyendo</p>
+        <p class="valor">{topEntrada ? fmt.dec(topEntrada.velEntrada as number) : '—'}<small> tokens/s</small></p>
+        {topEntrada && (
+          <p class="quien">
+            <span class="punto" style={`background:var(--s${slotFamilia(topEntrada.modelo.familia)})`} />
+            {topEntrada.modelo.nombre}
+          </p>
+        )}
+        {topEntrada?.velEntradaFuente === 'cortas' && <p class="aviso">Medido con entradas cortas</p>}
+      </div>
+      <div class="destacado">
+        <p class="etiqueta">Modelos evaluados</p>
+        <p class="valor">{modelos.length}</p>
+        <p class="quien">{totalCompletadas} de {modelos.length * pruebas.length} pruebas hechas</p>
+      </div>
+    </section>
+
+    <div class="filtros" role="group" aria-label="Filtros">
+      <input type="search" id="f-texto" placeholder="Buscar modelo…" aria-label="Buscar modelo" />
+      <label>
+        Razonamiento
+        <select id="f-razonamiento">
+          <option value="todos">Todos</option>
+          <option value="si">Con razonamiento</option>
+          <option value="no">Sin razonamiento</option>
+        </select>
+      </label>
+      <label>
+        Cuantización
+        <select id="f-cuant">
+          <option value="todas">Todas</option>
+          {cuantizaciones.map((c) => <option value={c}>{c}</option>)}
+        </select>
+      </label>
+      <label><input type="checkbox" id="f-completos" /> Solo benchmark completo</label>
+      <span class="contador" id="contador"></span>
+    </div>
+
+    <section class="tarjeta" id="ranking">
+      <div class="tarjeta-cab">
+        <div>
+          <h2 id="ranking-titulo">Índice IA Local</h2>
+          <p class="sub" id="ranking-sub"></p>
+        </div>
+        <div class="pestanas" role="group" aria-label="Métrica">
+          <button type="button" data-metrica="indice" aria-pressed="true">Puntuación</button>
+          <button type="button" data-metrica="velSalida" aria-pressed="false">Velocidad de salida</button>
+          <button type="button" data-metrica="velEntrada" aria-pressed="false">Velocidad de entrada</button>
+          <button type="button" data-metrica="tokensSalida" aria-pressed="false">Tokens generados</button>
+          <button type="button" data-metrica="tiempoTotal" aria-pressed="false">Tiempo total</button>
+        </div>
+      </div>
+      <div class="grafica" id="g-ranking"></div>
+      <div class="leyenda" id="leyenda-ranking"></div>
+      <p class="nota" id="nota-ranking"></p>
+    </section>
+
+    <div class="dos">
+      <section class="tarjeta" id="dispersion">
+        <div class="tarjeta-cab">
+          <div>
+            <h2>Puntuación vs velocidad</h2>
+            <p class="sub">Arriba a la derecha: modelos listos y rápidos.</p>
+          </div>
+        </div>
+        <div class="grafica" id="g-dispersion"></div>
+        <p class="nota">
+          Zona más atractiva: 70 puntos o más y al menos 20 tokens/s. Los círculos huecos son resultados provisionales.
+        </p>
+      </section>
+
+      <section class="tarjeta" id="desglose">
+        <div class="tarjeta-cab">
+          <div>
+            <h2>Desglose por prueba</h2>
+            <p class="sub">Puntos obtenidos sobre el máximo de cada prueba.</p>
+          </div>
+          <select class="selector" id="sel-modelo" aria-label="Modelo del desglose"></select>
+        </div>
+        <div class="grafica" id="g-desglose"></div>
+      </section>
+    </div>
+
+    <section class="tarjeta" id="tabla" style="margin-top:20px">
+      <div class="tarjeta-cab">
+        <div>
+          <h2>Tabla de resultados</h2>
+          <p class="sub">Haz clic en una columna para ordenar y en una fila para ver su desglose.</p>
+        </div>
+      </div>
+      <div class="tabla-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th><button data-col="nombre">Modelo</button></th>
+              <th><button data-col="cuantizacion">Cuantización</button></th>
+              <th class="num"><button data-col="indice">Puntuación</button></th>
+              <th class="num"><button data-col="completadas">Pruebas</button></th>
+              <th class="num"><button data-col="velSalida">Vel. salida</button></th>
+              <th class="num"><button data-col="velEntrada">Vel. entrada</button></th>
+              <th class="num"><button data-col="tokensSalida">Tokens generados</button></th>
+              <th class="num"><button data-col="tiempoTotal">Tiempo total</button></th>
+              <th><button data-col="equipo">Equipo</button></th>
+              <th><button data-col="fecha">Fecha</button></th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo-tabla"></tbody>
+        </table>
+      </div>
+      <p class="nota" id="nota-tabla"></p>
+    </section>
+
+    <Metodologia pruebas={pruebas} />
+  </main>
+
+  <footer class="wrap pie">
+    <span>Índice IA Local · Resultados medidos en local con llama.cpp · Powered by <a href="https://github.com/promiledev">PromileDev</a> </span>.
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+
+  <script type="application/json" id="datos" set:html={JSON.stringify({ pruebas, modelos })} />
+  <script>
+    import { iniciar } from '../scripts/app';
+    iniciar();
+  </script>
+</Base>

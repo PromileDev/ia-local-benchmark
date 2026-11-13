@@ -1,0 +1,131 @@
+{
+  "modelos": [
+    {
+      "id": "qwen3.6-35b-a3b-q4",
+      "nombre": "Qwen3.6-35B-A3B",
+      "familia": "Qwen",
+      "cuantizacion": "Q4 · UD-Q4_K_M",
+      "tamanoGB": 22.1,
+      "parametros": "35B (3B activos)",
+      "arquitectura": "MoE",
+      "razonamiento": true,
+      "licencia": "Apache 2.0",
+      "equipo": "SSD NVMe · 32 GB RAM",
+      "motor": "llama.cpp",
+      "fecha": "2026-11-13",
+      "pruebas": {
+        "1": {
+          "puntos": 5,
+          "entrada": {
+            "tokens": 25,
+            "segundos": 0.9,
+            "tps": 26.69
+          },
+          "salida": {
+            "tokens": 121,
+            "segundos": 5.3,
+            "tps": 22.76
+          },
+          "nota": "Responde solo «Canberra»."
+        },
+        "2": {
+          "puntos": 5,
+          "entrada": {
+            "tokens": 59,
+            "segundos": 5.9,
+            "tps": 10.05
+          },
+          "salida": {
+            "tokens": 927,
+            "segundos": 41,
+            "tps": 22.53
+          },
+          "nota": "43, con los pasos 36, 29 y 14."
+        },
+        "3": {
+          "puntos": 5,
+          "entrada": null,
+          "salida": {
+            "tokens": 1281,
+            "segundos": 54,
+            "tps": 23.72,
+            "tpsCalculada": true
+          },
+          "nota": "Pasa los 10 casos del corrector."
+        },
+        "4": {
+          "puntos": 11,
+          "entrada": null,
+          "salida": null,
+          "nota": "Martes, 29 de febrero de 2028: detecta que 2027 no es bisiesto."
+        },
+        "5": {
+          "puntos": 11,
+          "entrada": null,
+          "salida": {
+            "tokens": 1281,
+            "segundos": 54,
+            "tps": 23.72,
+            "tpsCalculada": true
+          },
+          "nota": "Solución correcta: David caballero; Ana, Bruno y Carla bribones."
+        },
+        "6": {
+          "puntos": 15,
+          "entrada": null,
+          "salida": {
+            "tokens": 1281,
+            "segundos": 54,
+            "tps": 23.72,
+            "tpsCalculada": true
+          },
+          "nota": "Pasa los 12 casos ocultos del corrector."
+        },
+        "7": {
+          "puntos": 11,
+          "entrada": null,
+          "salida": {
+            "tokens": 1281,
+            "segundos": 54,
+            "tps": 23.72,
+            "tpsCalculada": true
+          },
+          "nota": "Cumple las 7 reglas (46 palabras)."
+        },
+        "8": {
+          "puntos": 15,
+          "entrada": null,
+          "salida": {
+            "tokens": 1281,
+            "segundos": 54,
+            "tps": 23.72,
+            "tpsCalculada": true
+          },
+          "nota": "Respuesta 450: aplica la corrección y descarta el Almacén B y el día 15."
+        },
+        "9": {
+          "puntos": 11,
+          "entrada": null,
+          "salida": {
+            "tokens": 10281,
+            "segundos": 210,
+            "tps": 24,
+            "tpsCalculada": true
+          },
+          "nota": "JSON válido con las 3 facturas y los valores correctos."
+        },
+        "10": {
+          "puntos": 0,
+          "entrada": null,
+          "salida": {
+            "tokens": 1281,
+            "segundos": 54,
+            "tps": 22.00,
+            "tpsCalculada": true
+          },
+          "nota": "Se inventa el argumento de una novela que no existe."
+        }
+      }
+    }
+  ]
+}
